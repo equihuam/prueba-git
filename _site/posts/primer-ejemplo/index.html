@@ -190,7 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>cambio 2</p>
+<p>cambio 3</p>
 <p>This is a post with executable code.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -198,6 +198,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[1] 2</code></pre>
 </div>
 </div>
+<p>!Eché a perder mi blog, pero tengo una verión buena en git!</p>
+<p>Lo primero es !serenidad y paciencia! Toda la idea de usar <em>git</em> es para estos casos. Claro, podrías volverte experto en su uso más profesional mediante comandos, <a href="https://www.epirhandbook.com/es/new_pages/collaboration.es.html">ojalá te animes</a>. Pero por lo pronto hagámoslo con lo que ya tenemos a la mano. Veamos algunos escenarios posibles:</p>
+<ol type="1">
+<li><p>Un esenario muy sencillo es cuando estas actualizando un documento que ya pusiste en el registro de <em>git</em>. Intentas <em>renderizarlo</em> y para tu sorpresa, ¡falla de manera inexplicable! Para colmo, hiciste un montón de cambios que ya ni te acuerdas. Eso sí, estas seguro o segura de que tu última versi´n, a la que le hiciste un <em>commit</em>, sí funcionaba, no a tu gusto comoleto, pero no se trababa. En este caso, busca en la pestaña de <em>git</em> en <em>RStudio</em> el arhivo que estás trabajando, seguro un <strong>index.qmd</strong> en un folder de la carpet <strong>posts</strong>. Seleccionalo y aprieta el botón derecho dell mouse. En las ventanita emergente encontrarás la palabra <em>revert…</em>. ¡Eso es!, dale click y recuperará el arhivo en la últia versión que resguardaste con un <em>commit</em>. ¡Listo!, estás de regreso y ahora puedes volver a empezar, con más cuidado.</p></li>
+<li><p>Otro caso es cuando has sido muy diligente y has echo todo bien. Haces cambios a tu gusto y cada vez que lo sientes apropiado has echo tus <em>commits</em>. Te vas por un tesito, cambias de humor, trabajas en otra parte de tu <strong>blog</strong> y haces commit a tus nuevos cambios. De pronto, un rayo de inspiración, te hace comrender que lo que hiciste al principio del día no era buena ideas, te arrepientes y quieres regresar a una versión que está seis o diez <em>commits</em> atras, sabes a donde te gustaría regresar pues anotaste un mensaje alusivo que te recuerda claramente el estado del documento que quiieres retomar como nuevo inicio. ¿Cómo puedes viajar hacia atras en el tiempo? Bueno, hacer esto es relativamente sencillo con el comando <code>git restore</code> que puede rescatarte desde la <em>terminal</em> de <em>RStudio</em>. Las indicaciones <em>–source</em> y <em>main~x</em> (la x indica cuantos <em>commits</em> atras hay que ir), van de cajón, seguida de la ruta al archivo de tu interés, en este ejemplo <em>posts/primer-ejemplo/index.qmd</em>.</p></li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> restore <span class="at">--source</span> main~2 posts/primer-ejemplo/index.qmd</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> restore <span class="at">--source</span> cc12d23841a  posts/primer-ejemplo/index.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>otra git restore archivo1.txt –source f544960</p>
 
 
 
