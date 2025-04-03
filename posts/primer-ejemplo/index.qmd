@@ -6,6 +6,9 @@ categories: [news, code, analysis]
 image: "image.jpg"
 ---
 
+
+cambio 1
+
 This is a post with executable code.
 
 ```{r}
