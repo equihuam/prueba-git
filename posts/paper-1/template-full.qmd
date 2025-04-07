@@ -1,19 +1,20 @@
 ---
-title: Quarto Academic Typst
-subtitle: A Minimalistic Quarto + Typst Template for Academic Writing
-header: Please click [HERE](https://kazuyanagimoto.com/quarto-academic-typst/template-full.pdf) for the latest version.
+title: La Mejor Masa de Pizza de Marcelo
+subtitle: Uso de Quarto + Typst para reportes científicos
+header: Por favor haga click [AQUÍ](https://github.com/equihuam/prueba-git) para ir al documento en Github.
 author:
-  - name: Kazuharu Yanagimoto
-    email: kazuharu.yanagimoto@cemfi.edu.es
-    orcid: 0009-0007-1967-8304
+  - name: Miguel Equihua
+    email: miguel.equihua@inecol.mx
+    orcid: 0000-0001-5306-7397
     affiliations:
-      - name: CEMFI
+      - name: Inecol
 abstract: |
   {{< lipsum 1 >}}
 thanks: |
   This template is inspired by Kieran Healy's [LaTeX and Rmd template](https://github.com/kjhealy/latex-custom-kjh) and
   Andrew Heiss's [Hikmah Quarto template](https://github.com/andrewheiss/hikmah-academic-quarto).
 keywords: [Quarto, Typst, format]
+lang: es
 custom-keywords:
   - name: JEL Codes
     values: [J16, J22, J31]    
@@ -21,15 +22,17 @@ date: today
 date-format: full
 bibliography: references.bib
 format:
-  academic-typst:
-    section-numbering: "1.1.1"
-    font-paths: ["./static/fonts"]
-    mainfont: "Libertinus Serif"
-    sansfont: Jost
-    mathfont: "Libertinus Math"
-    bibliographystyle: "chicago-author-date"
-    include-in-header:
-      - text: '#import "@preview/mitex:0.2.4": *'
+    html: default
+    docx: default
+    academic-typst:
+      section-numbering: "1.1.1"
+      font-paths: ["./static/fonts"]
+      mainfont: "Libertinus Serif"
+      sansfont: Jost
+      mathfont: "Libertinus Math"
+      bibliographystyle: "chicago-author-date"
+      include-in-header:
+        - text: '#import "@preview/mitex:0.2.4": *'
 execute: 
   echo: false
   warning: false
@@ -38,7 +41,7 @@ execute:
 This document shows a practical usage of the template.
 
 I use the Palmer penguins dataset [@horst2020] to demonstrate the features of the template.
-The code is available [here](https://kazuyanagimoto.com/quarto-academic-typst/template-full.qmd).
+The code is available [here](https://github.com/kazuyanagimoto/quarto-academic-typst).
 
 ```{r}
 library(palmerpenguins)
