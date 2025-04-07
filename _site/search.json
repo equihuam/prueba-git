@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "posts/primer-ejemplo/index.html",
-    "href": "posts/primer-ejemplo/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "cambio 3\nThis is a post with executable code.\n\n1 + 1\n\n[1] 2\n\n\n!Eché a perder mi blog, pero tengo una verión buena en git!\nLo primero es !serenidad y paciencia! Toda la idea de usar git es para estos casos. Claro, podrías volverte experto en su uso más profesional mediante comandos, ojalá te animes. Pero por lo pronto hagámoslo con lo que ya tenemos a la mano. Veamos algunos escenarios posibles:\n\nUn esenario muy sencillo es cuando estas actualizando un documento que ya pusiste en el registro de git. Intentas renderizarlo y para tu sorpresa, ¡falla de manera inexplicable! Para colmo, hiciste un montón de cambios que ya ni te acuerdas. Eso sí, estas seguro o segura de que tu última versi´n, a la que le hiciste un commit, sí funcionaba, no a tu gusto comoleto, pero no se trababa. En este caso, busca en la pestaña de git en RStudio el arhivo que estás trabajando, seguro un index.qmd en un folder de la carpet posts. Seleccionalo y aprieta el botón derecho dell mouse. En las ventanita emergente encontrarás la palabra revert…. ¡Eso es!, dale click y recuperará el arhivo en la últia versión que resguardaste con un commit. ¡Listo!, estás de regreso y ahora puedes volver a empezar, con más cuidado.\nOtro caso es cuando has sido muy diligente y has echo todo bien. Haces cambios a tu gusto y cada vez que lo sientes apropiado has echo tus commits. Te vas por un tesito, cambias de humor, trabajas en otra parte de tu blog y haces commit a tus nuevos cambios. De pronto, un rayo de inspiración, te hace comrender que lo que hiciste al principio del día no era buena ideas, te arrepientes y quieres regresar a una versión que está seis o diez commits atras, sabes a donde te gustaría regresar pues anotaste un mensaje alusivo que te recuerda claramente el estado del documento que quiieres retomar como nuevo inicio. ¿Cómo puedes viajar hacia atras en el tiempo? Bueno, hacer esto es relativamente sencillo con el comando git restore que puede rescatarte desde la terminal de RStudio. Las indicaciones –source y main~x (la x indica cuantos commits atras hay que ir), van de cajón, seguida de la ruta al archivo de tu interés, en este ejemplo posts/primer-ejemplo/index.qmd.\n\n\ngit restore --source main~2 posts/primer-ejemplo/index.qmd\n \ngit restore --source cc12d23841a  posts/primer-ejemplo/index.qmd\notra git restore archivo1.txt –source f544960"
-  },
-  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "library(DiagrammeR)\n\nThis is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\n\n\n\n\n\n\n\nG\n\n\n\nrun\n\nrun\n\n\n\nintr\n\nintr\n\n\n\nrun--intr\n\n\n\n\nkernel\n\nkernel\n\n\n\nrun--kernel\n\n\n\n\nrunbl\n\nrunbl\n\n\n\nintr--runbl\n\n\n\n\nrunbl--run\n\n\n\n\nzombie\n\nzombie\n\n\n\nkernel--zombie\n\n\n\n\nsleep\n\nsleep\n\n\n\nkernel--sleep\n\n\n\n\nrunmem\n\nrunmem\n\n\n\nkernel--runmem\n\n\n\n\nsleep--runmem\n\n\n\n\nswap\n\nswap\n\n\n\nsleep--swap\n\n\n\n\nrunswap\n\nrunswap\n\n\n\nswap--runswap\n\n\n\n\nrunswap--runmem\n\n\n\n\nnew\n\nnew\n\n\n\nrunswap--new\n\n\n\n\nnew--runmem\n\n\n\n\n\n\n\n\n\n\ngrafo &lt;- \"graph G {\n  layout=neato\n  run -- intr;\n  intr -- runbl;\n  runbl -- run;\n  run -- kernel;\n  kernel -- zombie;\n  kernel -- sleep;\n  kernel -- runmem;\n  sleep -- swap;\n  swap -- runswap;\n  runswap -- new;\n  runswap -- runmem;\n  new -- runmem;\n  sleep -- runmem;\n}\"\n\nDiagrammeR::grViz(grafo)\n\n\n\n\n\n\ngrViz(engine = \"dot\", diagram =  \"\ndigraph boxes_and_circles {\n\n  # a 'graph' statement\n  graph [overlap = true, fontsize = 10]\n\n  # several 'node' statements\n  node [shape = box,\n        fontname = Helvetica]\n  A; B; C; D; E; F\n\n  node [shape = circle,\n        fixedsize = true,\n        width = 0.9] // sets as circles\n  1; 2; 3; 4; 5; 6; 7; 8\n\n  # several 'edge' statements\n  A-&gt;1 B-&gt;2 B-&gt;3 B-&gt;4 C-&gt;A\n  1-&gt;D E-&gt;A 2-&gt;4 1-&gt;5 1-&gt;F\n  E-&gt;6 4-&gt;6 5-&gt;7 6-&gt;7 3-&gt;8\n}\n\")"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "prueba-git",
+    "section": "",
+    "text": "Quarto Academic Typst (html)\n\n\nA minimalistic Quarto + Typst template for academic writing\n\n\nDuis ornare ex ac iaculis pretium. Maecenas sagittis odio id erat pharetra, sit amet consectetur quam sollicitudin. Vivamus pharetra quam purus, nec sagittis risus pretium at. Nullam feugiat, turpis ac accumsan interdum, sem tellus blandit neque, id vulputate diam quam semper nisl. Donec sit amet enim at neque porttitor aliquet. Phasellus facilisis nulla eget placerat eleifend. Vestibulum non egestas eros, eget lobortis ipsum. Nulla rutrum massa eget enim aliquam, id porttitor erat luctus. Nunc sagittis quis eros eu sagittis. Pellentesque dictum, erat at pellentesque sollicitudin, justo augue pulvinar metus, quis rutrum est mi nec felis. Vestibulum efficitur mi lorem, at elementum purus tincidunt a. Aliquam finibus enim magna, vitae pellentesque erat faucibus at. Nulla mauris tellus, imperdiet id lobortis et, dignissim condimentum ipsum. Morbi nulla orci, varius at aliquet sed, facilisis id tortor. Donec ut urna nisi. \n\n\n\n\n\nApr 6, 2025\n\n\nKazuharu Yanagimoto\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto Academic Typst\n\n\nA Minimalistic Quarto + Typst Template for Academic Writing\n\n\nAenean placerat luctus tortor vitae molestie. Nulla at aliquet nulla. Sed efficitur tellus orci, sed fringilla lectus laoreet eget. Vivamus maximus quam sit amet arcu dignissim, sed accumsan massa ullamcorper. Sed iaculis tincidunt feugiat. Nulla in est at nunc ultricies dictum ut vitae nunc. Aenean convallis vel diam at malesuada. Suspendisse arcu libero, vehicula tempus ultrices a, placerat sit amet tortor. Sed dictum id nulla commodo mattis. Aliquam mollis, nunc eu tristique faucibus, purus lacus tincidunt nulla, ac pretium lorem nunc ut enim. Curabitur eget mattis nisl, vitae sodales augue. Nam felis massa, bibendum sit amet nulla vel, vulputate rutrum lacus. Aenean convallis odio pharetra nulla mattis consequat. \n\n\n\n\n\nApr 6, 2025\n\n\nKazuharu Yanagimoto\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 2, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 30, 2025\n\n\nMiguel Equihua\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -19,5 +19,54 @@
     "title": "About",
     "section": "",
     "text": "About this blog"
+  },
+  {
+    "objectID": "posts/paper-1/paper-1.html",
+    "href": "posts/paper-1/paper-1.html",
+    "title": "Quarto Academic Typst",
+    "section": "",
+    "text": "This document shows a minimal example of the template. For more information, see the full demo and its source."
+  },
+  {
+    "objectID": "posts/paper-1/paper-1.html#subsection-as-heading-level-2",
+    "href": "posts/paper-1/paper-1.html#subsection-as-heading-level-2",
+    "title": "Quarto Academic Typst",
+    "section": "Subsection as Heading Level 2",
+    "text": "Subsection as Heading Level 2\nYou can use LaTeX math expressions:\n\\[\nY_{it} = \\alpha_i + \\lambda_t + \\sum_{k \\neq -1} \\tau_h \\{E_i + k = t\\} +\n\\varepsilon_{it}.\n\\]\n\nSubsubsection as Heading Level 3\nI don’t use and don’t recommend using heading levels 3 and below but it works."
+  },
+  {
+    "objectID": "posts/paper-1/paper-1.html#citation",
+    "href": "posts/paper-1/paper-1.html#citation",
+    "title": "Quarto Academic Typst",
+    "section": "Citation",
+    "text": "Citation\nYou can cite a reference like this (Katsushika 1831) or Horst, Hill, and Gorman (2020). Typst has some built-in citation styles. Check the Typst documentation for more information."
+  },
+  {
+    "objectID": "posts/paper-1/paper-1.html#figures",
+    "href": "posts/paper-1/paper-1.html#figures",
+    "title": "Quarto Academic Typst",
+    "section": "Figures",
+    "text": "Figures\nAs Figure 1 shows, the caption is displayed below the figure. As a caption of the figure (fig-cap), I use bold text for the title and use a normal text for the description.\n\n\n\n\n\n\n\n\nFigure 1: Histogram of Miles per Gallon. The x-axis shows the miles per gallon, and the y-axis shows the frequency."
+  },
+  {
+    "objectID": "posts/paper-1/paper-1.html#tables",
+    "href": "posts/paper-1/paper-1.html#tables",
+    "title": "Quarto Academic Typst",
+    "section": "Tables",
+    "text": "Tables\nYou can use tinytable for general tables and modelsummary for regression tables.1 As Table 1 shows, the caption is displayed above the table. The notes of the table can be added using the notes argument of the tinytable::tt() function.\n\n\n\n\nTable 1: Head of the mtcars Dataset\n\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                mpg\n                cyl\n                disp\n                hp\n                drat\n              \n        \n        _Notes_: This table shows the first six rows of the mtcars dataset.\n        \n                \n                  21.0\n                  6\n                  160\n                  110\n                  3.90\n                \n                \n                  21.0\n                  6\n                  160\n                  110\n                  3.90\n                \n                \n                  22.8\n                  4\n                  108\n                  93\n                  3.85\n                \n                \n                  21.4\n                  6\n                  258\n                  110\n                  3.08\n                \n                \n                  18.7\n                  8\n                  360\n                  175\n                  3.15"
+  },
+  {
+    "objectID": "posts/paper-1/paper-1.html#footnotes",
+    "href": "posts/paper-1/paper-1.html#footnotes",
+    "title": "Quarto Academic Typst",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nSince the default backend of modelsummary is tinytable, you can use the customization options of tinytable for modelsummary.↩︎"
+  },
+  {
+    "objectID": "posts/primer-ejemplo/index.html",
+    "href": "posts/primer-ejemplo/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "cambio 3\nThis is a post with executable code.\n\n1 + 1\n\n[1] 2\n\n\n!Eché a perder mi blog, pero tengo una verión buena en git!\nLo primero es !serenidad y paciencia! Toda la idea de usar git es para estos casos. Claro, podrías volverte experto en su uso más profesional mediante comandos, ojalá te animes. Pero por lo pronto hagámoslo con lo que ya tenemos a la mano. Veamos algunos escenarios posibles:\n\nUn esenario muy sencillo es cuando estas actualizando un documento que ya pusiste en el registro de git. Intentas renderizarlo y para tu sorpresa, ¡falla de manera inexplicable! Para colmo, hiciste un montón de cambios que ya ni te acuerdas. Eso sí, estas seguro o segura de que tu última versi´n, a la que le hiciste un commit, sí funcionaba, no a tu gusto comoleto, pero no se trababa. En este caso, busca en la pestaña de git en RStudio el arhivo que estás trabajando, seguro un index.qmd en un folder de la carpet posts. Seleccionalo y aprieta el botón derecho dell mouse. En las ventanita emergente encontrarás la palabra revert…. ¡Eso es!, dale click y recuperará el arhivo en la últia versión que resguardaste con un commit. ¡Listo!, estás de regreso y ahora puedes volver a empezar, con más cuidado.\nOtro caso es cuando has sido muy diligente y has echo todo bien. Haces cambios a tu gusto y cada vez que lo sientes apropiado has echo tus commits. Te vas por un tesito, cambias de humor, trabajas en otra parte de tu blog y haces commit a tus nuevos cambios. De pronto, un rayo de inspiración, te hace comrender que lo que hiciste al principio del día no era buena ideas, te arrepientes y quieres regresar a una versión que está seis o diez commits atras, sabes a donde te gustaría regresar pues anotaste un mensaje alusivo que te recuerda claramente el estado del documento que quiieres retomar como nuevo inicio. ¿Cómo puedes viajar hacia atras en el tiempo? Bueno, hacer esto es relativamente sencillo con el comando git restore que puede rescatarte desde la terminal de RStudio. Las indicaciones –source y main~x (la x indica cuantos commits atras hay que ir), van de cajón, seguida de la ruta al archivo de tu interés, en este ejemplo posts/primer-ejemplo/index.qmd.\n\n\ngit restore --source main~2 posts/primer-ejemplo/index.qmd\n \ngit restore --source cc12d23841a  posts/primer-ejemplo/index.qmd\notra git restore archivo1.txt –source f544960"
   }
 ]
