@@ -9,7 +9,7 @@
 <meta name="author" content="Kazuharu Yanagimoto">
 <meta name="keywords" content="Quarto, Typst, format">
 
-<title>Quarto Academic Typst – prueba-git</title>
+<title>Quarto Academic Typst (html) – prueba-git</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -164,7 +164,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Quarto Academic Typst</h1>
+      <h1 class="title">Quarto Academic Typst (html)</h1>
             <p class="subtitle lead">A minimalistic Quarto + Typst template for academic writing</p>
                       </div>
   </div>
@@ -199,7 +199,7 @@ window.Quarto = {
   <div>
     <div class="abstract">
       <div class="block-title">Abstract</div>
-      <p>Duis urna urna, pellentesque eu urna ut, malesuada bibendum dolor. Suspendisse potenti. Vivamus ornare, arcu quis molestie ultrices, magna est accumsan augue, auctor vulputate erat quam quis neque. Nullam scelerisque odio vel ultricies facilisis. Ut porta arcu non magna sagittis lacinia. Cras ornare vulputate lectus a tristique. Pellentesque ac arcu congue, rhoncus mi id, dignissim ligula.</p>
+      <p>Vestibulum ultrices, tortor at mattis porta, odio nisi rutrum nulla, sit amet tincidunt eros quam facilisis tellus. Fusce eleifend lectus in elementum lacinia. Nam auctor nunc in massa ullamcorper, sit amet auctor ante accumsan. Nam ut varius metus. Curabitur eget tristique leo. Cras finibus euismod erat eget elementum. Integer vel placerat ex. Ut id eros quis lectus lacinia venenatis hendrerit vel ante.</p>
     </div>
   </div>
 
@@ -223,7 +223,7 @@ window.Quarto = {
 
 
 
-<p>This document shows a minimal example of the template. For more information, see the <a href="https://kazuyanagimoto.com/quarto-academic-typst/template-full.pdf">full demo</a> and its <a href="https://kazuyanagimoto.com/quarto-academic-typst/template-full.qmd">source</a>.</p>
+<p>This document shows a minimal example of the template. For more information, see the <a href="https://kazuyanagimoto.com/quarto-academic-typst/template-full.pdf">full demo</a> and its <a href="https://github.com/kazuyanagimoto/quarto-academic-typst">source</a>.</p>
 <section id="section-as-heading-level-1" class="level1">
 <h1>Section as Heading Level 1</h1>
 <p>Section numbering can be specified in the YAML <code>section-numbering</code> field as other Typst templates.</p>
@@ -279,8 +279,8 @@ Table&nbsp;1: Head of the mtcars Dataset
 
     <script>
 
-      function styleCell_4i5cfr2x9y9g3xln71rw(i, j, css_id) {
-          var table = document.getElementById("tinytable_4i5cfr2x9y9g3xln71rw");
+      function styleCell_ctrdlk2kiu60308g2g1z(i, j, css_id) {
+          var table = document.getElementById("tinytable_ctrdlk2kiu60308g2g1z");
           var cell = table.rows[i]?.cells[j];  // Safe navigation to avoid errors
           if (cell) {
               console.log(`Styling cell at (${i}, ${j}) with class ${css_id}`);
@@ -290,7 +290,7 @@ Table&nbsp;1: Head of the mtcars Dataset
           }
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_4i5cfr2x9y9g3xln71rw');
+        var table = document.getElementById('tinytable_ctrdlk2kiu60308g2g1z');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -298,8 +298,8 @@ Table&nbsp;1: Head of the mtcars Dataset
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_4i5cfr2x9y9g3xln71rw(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_4i5cfr2x9y9g3xln71rw");
+      function spanCell_ctrdlk2kiu60308g2g1z(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_ctrdlk2kiu60308g2g1z");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -329,14 +329,14 @@ Table&nbsp;1: Head of the mtcars Dataset
       window.addEventListener('load', function () {
           var cellsToStyle = [
             // tinytable style arrays after
-          { positions: [ { i: 5, j: 0 }, { i: 5, j: 1 }, { i: 5, j: 2 }, { i: 5, j: 3 }, { i: 5, j: 4 },  ], css_id: 'tinytable_css_0sww4ac9had8oo3qq9gg',}, 
-          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 },  ], css_id: 'tinytable_css_y847zogfdufycpwgpt3j',}, 
+          { positions: [ { i: 5, j: 0 }, { i: 5, j: 1 }, { i: 5, j: 2 }, { i: 5, j: 3 }, { i: 5, j: 4 },  ], css_id: 'tinytable_css_govjen5b4ghxm2dd83ir',}, 
+          { positions: [ { i: 0, j: 0 }, { i: 0, j: 1 }, { i: 0, j: 2 }, { i: 0, j: 3 }, { i: 0, j: 4 },  ], css_id: 'tinytable_css_sw7pozgr8v8oar9ghwaz',}, 
           ];
 
           // Loop over the arrays to style the cells
           cellsToStyle.forEach(function (group) {
               group.positions.forEach(function (cell) {
-                  styleCell_4i5cfr2x9y9g3xln71rw(cell.i, cell.j, group.css_id);
+                  styleCell_ctrdlk2kiu60308g2g1z(cell.i, cell.j, group.css_id);
               });
           });
       });
@@ -344,11 +344,11 @@ Table&nbsp;1: Head of the mtcars Dataset
 
     <style>
       /* tinytable css entries after */
-      .table td.tinytable_css_0sww4ac9had8oo3qq9gg, .table th.tinytable_css_0sww4ac9had8oo3qq9gg { border-bottom: solid #d3d8dc 0.1em; }
-      .table td.tinytable_css_y847zogfdufycpwgpt3j, .table th.tinytable_css_y847zogfdufycpwgpt3j { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
+      .table td.tinytable_css_govjen5b4ghxm2dd83ir, .table th.tinytable_css_govjen5b4ghxm2dd83ir { border-bottom: solid #d3d8dc 0.1em; }
+      .table td.tinytable_css_sw7pozgr8v8oar9ghwaz, .table th.tinytable_css_sw7pozgr8v8oar9ghwaz { border-top: solid #d3d8dc 0.1em; border-bottom: solid #d3d8dc 0.05em; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_4i5cfr2x9y9g3xln71rw" style="table-layout: fixed; width: 80% !important; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+      <table class="table table-borderless" id="tinytable_ctrdlk2kiu60308g2g1z" style="table-layout: fixed; width: 80% !important; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
         <thead>
         
               <tr>
@@ -410,7 +410,6 @@ Table&nbsp;1: Head of the mtcars Dataset
 <section id="last-words" class="level1">
 <h1>Last words</h1>
 <p>I made this template for my working papers, so it may not be suitable for other fields than economics. I am happy to receive feedback and suggestions for improvement.</p>
-{{&lt; appendix  &gt;}}
 </section>
 <section id="supplemental-figures" class="level1">
 <h1>Supplemental Figures</h1>

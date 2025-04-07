@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "prueba-git",
     "section": "",
-    "text": "Quarto Academic Typst (html)\n\n\nA minimalistic Quarto + Typst template for academic writing\n\n\nEtiam congue quam eget velit convallis, eu sagittis orci vestibulum. Vestibulum at massa turpis. Curabitur ornare ex sed purus vulputate, vitae porta augue rhoncus. Phasellus auctor suscipit purus, vel ultricies nunc. Nunc eleifend nulla ac purus volutpat, id fringilla felis aliquet. Duis vitae porttitor nibh, in rhoncus risus. Vestibulum a est vitae est tristique vehicula. Proin mollis justo id est tempus hendrerit. Praesent suscipit placerat congue. Aliquam eu elit gravida, consequat augue non, ultricies sapien. Nunc ultricies viverra ante, sit amet vehicula ante volutpat id. Etiam tempus purus vitae tellus mollis viverra. Donec at ornare mauris. Aliquam sodales hendrerit ornare. Suspendisse accumsan lacinia sapien, sit amet imperdiet dui molestie ut. \n\n\n\n\n\nApr 6, 2025\n\n\nKazuharu Yanagimoto\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto Academic Typst\n\n\nA Minimalistic Quarto + Typst Template for Academic Writing\n\n\nDuis urna urna, pellentesque eu urna ut, malesuada bibendum dolor. Suspendisse potenti. Vivamus ornare, arcu quis molestie ultrices, magna est accumsan augue, auctor vulputate erat quam quis neque. Nullam scelerisque odio vel ultricies facilisis. Ut porta arcu non magna sagittis lacinia. Cras ornare vulputate lectus a tristique. Pellentesque ac arcu congue, rhoncus mi id, dignissim ligula. \n\n\n\n\n\nApr 6, 2025\n\n\nKazuharu Yanagimoto\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 2, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 30, 2025\n\n\nMiguel Equihua\n\n\n\n\n\n\nNo matching items"
+    "text": "Quarto Academic Typst (html)\n\n\nA minimalistic Quarto + Typst template for academic writing\n\n\nNunc ac dignissim magna. Vestibulum vitae egestas elit. Proin feugiat leo quis ante condimentum, eu ornare mauris feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris cursus laoreet ex, dignissim bibendum est posuere iaculis. Suspendisse et maximus elit. In fringilla gravida ornare. Aenean id lectus pulvinar, sagittis felis nec, rutrum risus. Nam vel neque eu arcu blandit fringilla et in quam. Aliquam luctus est sit amet vestibulum eleifend. Phasellus elementum sagittis molestie. Proin tempor lorem arcu, at condimentum purus volutpat eu. Fusce et pellentesque ligula. Pellentesque id tellus at erat luctus fringilla. Suspendisse potenti. \n\n\n\n\n\nApr 6, 2025\n\n\nKazuharu Yanagimoto\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto Academic Typst\n\n\nA Minimalistic Quarto + Typst Template for Academic Writing\n\n\nUt ut condimentum augue, nec eleifend nisl. Sed facilisis egestas odio ac pretium. Pellentesque consequat magna sed venenatis sagittis. Vivamus feugiat lobortis magna vitae accumsan. Pellentesque euismod malesuada hendrerit. Ut non mauris non arcu condimentum sodales vitae vitae dolor. Nullam dapibus, velit eget lacinia rutrum, ipsum justo malesuada odio, et lobortis sapien magna vel lacus. Nulla purus neque, hendrerit non malesuada eget, mattis vel erat. Suspendisse potenti. \n\n\n\n\n\nApr 6, 2025\n\n\nKazuharu Yanagimoto\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 2, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 30, 2025\n\n\nMiguel Equihua\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -23,42 +23,42 @@
   {
     "objectID": "posts/paper-1/paper-1.html",
     "href": "posts/paper-1/paper-1.html",
-    "title": "Quarto Academic Typst",
+    "title": "Quarto Academic Typst (html)",
     "section": "",
     "text": "This document shows a minimal example of the template. For more information, see the full demo and its source."
   },
   {
     "objectID": "posts/paper-1/paper-1.html#subsection-as-heading-level-2",
     "href": "posts/paper-1/paper-1.html#subsection-as-heading-level-2",
-    "title": "Quarto Academic Typst",
+    "title": "Quarto Academic Typst (html)",
     "section": "Subsection as Heading Level 2",
     "text": "Subsection as Heading Level 2\nYou can use LaTeX math expressions:\n\\[\nY_{it} = \\alpha_i + \\lambda_t + \\sum_{k \\neq -1} \\tau_h \\{E_i + k = t\\} +\n\\varepsilon_{it}.\n\\]\n\nSubsubsection as Heading Level 3\nI don’t use and don’t recommend using heading levels 3 and below but it works."
   },
   {
     "objectID": "posts/paper-1/paper-1.html#citation",
     "href": "posts/paper-1/paper-1.html#citation",
-    "title": "Quarto Academic Typst",
+    "title": "Quarto Academic Typst (html)",
     "section": "Citation",
     "text": "Citation\nYou can cite a reference like this (Katsushika 1831) or Horst, Hill, and Gorman (2020). Typst has some built-in citation styles. Check the Typst documentation for more information."
   },
   {
     "objectID": "posts/paper-1/paper-1.html#figures",
     "href": "posts/paper-1/paper-1.html#figures",
-    "title": "Quarto Academic Typst",
+    "title": "Quarto Academic Typst (html)",
     "section": "Figures",
     "text": "Figures\nAs Figure 1 shows, the caption is displayed below the figure. As a caption of the figure (fig-cap), I use bold text for the title and use a normal text for the description.\n\n\n\n\n\n\n\n\nFigure 1: Histogram of Miles per Gallon. The x-axis shows the miles per gallon, and the y-axis shows the frequency."
   },
   {
     "objectID": "posts/paper-1/paper-1.html#tables",
     "href": "posts/paper-1/paper-1.html#tables",
-    "title": "Quarto Academic Typst",
+    "title": "Quarto Academic Typst (html)",
     "section": "Tables",
     "text": "Tables\nYou can use tinytable for general tables and modelsummary for regression tables.1 As Table 1 shows, the caption is displayed above the table. The notes of the table can be added using the notes argument of the tinytable::tt() function.\n\n\n\n\nTable 1: Head of the mtcars Dataset\n\n\n\n\n\n    \n\n    \n    \n      \n        \n        \n              \n                mpg\n                cyl\n                disp\n                hp\n                drat\n              \n        \n        _Notes_: This table shows the first six rows of the mtcars dataset.\n        \n                \n                  21.0\n                  6\n                  160\n                  110\n                  3.90\n                \n                \n                  21.0\n                  6\n                  160\n                  110\n                  3.90\n                \n                \n                  22.8\n                  4\n                  108\n                  93\n                  3.85\n                \n                \n                  21.4\n                  6\n                  258\n                  110\n                  3.08\n                \n                \n                  18.7\n                  8\n                  360\n                  175\n                  3.15"
   },
   {
     "objectID": "posts/paper-1/paper-1.html#footnotes",
     "href": "posts/paper-1/paper-1.html#footnotes",
-    "title": "Quarto Academic Typst",
+    "title": "Quarto Academic Typst (html)",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nSince the default backend of modelsummary is tinytable, you can use the customization options of tinytable for modelsummary.↩︎"
   },

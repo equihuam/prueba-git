@@ -28,7 +28,7 @@ execute:
 ---
 
 This document shows a minimal example of the template.
-For more information, see the [full demo](https://kazuyanagimoto.com/quarto-academic-typst/template-full.pdf) and its [source](https://kazuyanagimoto.com/quarto-academic-typst/template-full.qmd).
+For more information, see the [full demo](https://kazuyanagimoto.com/quarto-academic-typst/template-full.pdf) and its [source](https://github.com/kazuyanagimoto/quarto-academic-typst).
 
 # Section as Heading Level 1
 
@@ -87,8 +87,11 @@ mtcars[1:5, 1:5] |>
 I made this template for my working papers, so it may not be suitable for other fields than economics.
 I am happy to receive feedback and suggestions for improvement.
 
+
 ::: {.content-hidden when-format="html"}
+
 {{< appendix >}}
+
 :::
 
 # Supplemental Figures
