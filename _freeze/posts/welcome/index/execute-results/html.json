@@ -1,0 +1,19 @@
+{
+  "hash": "144b651a59a1d35158c01fd02c9768b6",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Welcome To My Blog\"\nauthor: \"Miguel Equihua\"\ndate: \"2025-03-30\"\ncategories: [news]\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(DiagrammeR)\n```\n:::\n\n\n\n\nThis is the first post in a Quarto blog. Welcome!\n\n![](thumbnail.jpg)\n\nSince this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.\n\n\n\n\n```{dot}\ngraph G {\n  layout=neato\n  run -- intr;\n  intr -- runbl;\n  runbl -- run;\n  run -- kernel;\n  kernel -- zombie;\n  kernel -- sleep;\n  kernel -- runmem;\n  sleep -- swap;\n  swap -- runswap;\n  runswap -- new;\n  runswap -- runmem;\n  new -- runmem;\n  sleep -- runmem;\n}\n```\n\n::: {.cell}\n\n```{.r .cell-code}\ngrafo <- \"graph G {\n  layout=neato\n  run -- intr;\n  intr -- runbl;\n  runbl -- run;\n  run -- kernel;\n  kernel -- zombie;\n  kernel -- sleep;\n  kernel -- runmem;\n  sleep -- swap;\n  swap -- runswap;\n  runswap -- new;\n  runswap -- runmem;\n  new -- runmem;\n  sleep -- runmem;\n}\"\n\nDiagrammeR::grViz(grafo)\n```\n\n::: {.cell-output-display}\n\n```{=html}\n<div class=\"grViz html-widget html-fill-item\" id=\"htmlwidget-4253d82e3d14068aed52\" style=\"width:100%;height:464px;\"></div>\n<script type=\"application/json\" data-for=\"htmlwidget-4253d82e3d14068aed52\">{\"x\":{\"diagram\":\"graph G {\\n  layout=neato\\n  run -- intr;\\n  intr -- runbl;\\n  runbl -- run;\\n  run -- kernel;\\n  kernel -- zombie;\\n  kernel -- sleep;\\n  kernel -- runmem;\\n  sleep -- swap;\\n  swap -- runswap;\\n  runswap -- new;\\n  runswap -- runmem;\\n  new -- runmem;\\n  sleep -- runmem;\\n}\",\"config\":{\"engine\":\"dot\",\"options\":null}},\"evals\":[],\"jsHooks\":[]}</script>\n```\n\n:::\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\ngrViz(engine = \"dot\", diagram =  \"\ndigraph boxes_and_circles {\n\n  # a 'graph' statement\n  graph [overlap = true, fontsize = 10]\n\n  # several 'node' statements\n  node [shape = box,\n        fontname = Helvetica]\n  A; B; C; D; E; F\n\n  node [shape = circle,\n        fixedsize = true,\n        width = 0.9] // sets as circles\n  1; 2; 3; 4; 5; 6; 7; 8\n\n  # several 'edge' statements\n  A->1 B->2 B->3 B->4 C->A\n  1->D E->A 2->4 1->5 1->F\n  E->6 4->6 5->7 6->7 3->8\n}\n\")\n```\n\n::: {.cell-output-display}\n\n```{=html}\n<div class=\"grViz html-widget html-fill-item\" id=\"htmlwidget-260c3410df5465bb0897\" style=\"width:100%;height:464px;\"></div>\n<script type=\"application/json\" data-for=\"htmlwidget-260c3410df5465bb0897\">{\"x\":{\"diagram\":\"\\ndigraph boxes_and_circles {\\n\\n  # a \\\"graph\\\" statement\\n  graph [overlap = true, fontsize = 10]\\n\\n  # several \\\"node\\\" statements\\n  node [shape = box,\\n        fontname = Helvetica]\\n  A; B; C; D; E; F\\n\\n  node [shape = circle,\\n        fixedsize = true,\\n        width = 0.9] // sets as circles\\n  1; 2; 3; 4; 5; 6; 7; 8\\n\\n  # several \\\"edge\\\" statements\\n  A->1 B->2 B->3 B->4 C->A\\n  1->D E->A 2->4 1->5 1->F\\n  E->6 4->6 5->7 6->7 3->8\\n}\\n\",\"config\":{\"engine\":\"dot\",\"options\":null}},\"evals\":[],\"jsHooks\":[]}</script>\n```\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../site_libs/htmltools-fill-0.5.8.1/fill.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js\"></script>\n<script src=\"../../site_libs/viz-1.8.2/viz.js\"></script>\n<link href=\"../../site_libs/DiagrammeR-styles-0.2/styles.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/grViz-binding-1.0.11/grViz.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
