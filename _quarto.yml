@@ -1,5 +1,8 @@
 project:
   type: website
+  
+manuscript: 
+  article: posts/paper-1/template-full.qmd
 
 website:
   title: "prueba-git"
